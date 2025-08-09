@@ -2,12 +2,70 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Index page</title>
 </head>
 
 <body>
 
-    <h1 th:text="|Best of the year by ${fullName}|"></h1>
+    <header>
+
+        <nav class="Navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="row py-3">
+                    <div class="col-6 col-md-4">
+                        <h1>Best of</h1>
+                    </div>
+
+                    <form class="col-6 col-md-8 d-flex align-items-center">
+                        <button class="btn btn-primary mx-1" type="button">
+                            <a href="/movies" class="text-decoration-none text-white">
+                                Movies
+                            </a>
+                        </button>
+                        <button class="btn btn-primary mx-1" type="button">
+                            <a href="/songs" class="text-decoration-none text-white">
+                                Songs
+                            </a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container text-center py-5">
+            <h2 th:text="|Best of the year by ${fullName}|"></h2>
+
+            <div class="py-2">
+                <img src="https://picsum.photos/900/400" alt="placeholder photo">
+            </div>
+            <div class="py-2">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet facilis enim, reprehenderit tenetur
+                    id fuga eaque accusantium voluptate accusamus error, consequatur iusto odio, nemo neque dolores eum
+                    assumenda sed cum. Velit quas temporibus ipsa neque optio doloremque ullam laboriosam excepturi
+                    ratione numquam reprehenderit, quam quisquam distinctio deserunt exercitationem id hic dolorum,
+                    atque vitae quis repudiandae iusto impedit iste. Unde, quam explicabo voluptas eum id provident
+                    porro totam distinctio fugit natus? At amet ipsam corporis architecto qui commodi, similique rem
+                    delectus fugit illo alias tempora, voluptatem deserunt vero, aut et sequi deleniti. Repellendus cum
+                    neque, aperiam at unde dolore praesentium ducimus vel explicabo, aspernatur consectetur culpa illo,
+                    sequi reprehenderit? Nobis, amet quas tempore impedit provident voluptate cum et ratione ipsam.
+                    Distinctio consequatur, tenetur quaerat quae recusandae quo veritatis, ullam doloremque esse eius ex
+                    a molestiae officiis, sint odit repellat aliquid? Expedita enim impedit aperiam, sint maiores
+                    debitis commodi cum adipisci, molestias nam aliquam, natus quia libero amet asperiores quis tempore
+                    dolores saepe voluptas. Repudiandae dignissimos libero autem fuga sapiente a ducimus similique
+                    voluptas rerum! Repellat illum quaerat id ratione facere provident magni quae reiciendis, eius, non
+                    natus veritatis eum impedit similique dolores quidem voluptatibus et, atque iusto! Aspernatur autem
+                    harum nemo?
+                </p>
+            </div>
+        </div>
+    </main>
+
 
 </body>
 
