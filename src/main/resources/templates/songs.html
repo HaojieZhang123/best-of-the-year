@@ -8,9 +8,19 @@
 
     <header th:replace="fragments :: header"></header>
 
-    <h1>Songs</h1>
+    <main>
 
-    <p th:text="${bestSongs}"></p>
+        <h1 class="text-center py-3">Songs</h1>
+
+        <div th:each="song : ${songs}" class="row d-flex justify-content-center">
+            <div class="col-6">
+                <a th:href="@{'/songs/' + ${song.getId()}}" class="text-decoration-none text-black">
+                    <div th:text="${song.getTitle()}" class="py-2 text-center border">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
 
 </body>
 

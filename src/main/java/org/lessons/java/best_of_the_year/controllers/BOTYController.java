@@ -84,25 +84,16 @@ public class BOTYController {
 
     @GetMapping("/movies")
     public String bestMovies(Model model) {
-        String bestMovies = "";
         Movie[] movies = getBestMovies();
-        for (Movie movie : movies) {
-            bestMovies += movie.toString();
-        }
 
-        model.addAttribute("bestMovies", bestMovies);
+        model.addAttribute("movies", movies);
         return "movies";
     }
 
     @GetMapping("/songs")
     public String bestSongs(Model model) {
-        String bestSongs = "";
         Song[] songs = getBestSongs();
-        for (Song song : songs) {
-            bestSongs += song.toString();
-        }
-
-        model.addAttribute("bestSongs", bestSongs);
+        model.addAttribute("songs", songs);
         return "songs";
     }
 
