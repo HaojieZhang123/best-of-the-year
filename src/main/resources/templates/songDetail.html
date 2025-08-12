@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="fragments :: head('Songs Detail')"></head>
+<head th:replace="~{ fragments/fragments :: head('Songs Detail')}"></head>
 
 
 <body>
 
-    <header th:replace="fragments :: header"></header>
+    <header th:replace="~{ fragments/fragments :: header}"></header>
 
     <h1 th:text="${title}" class="text-center py-3"></h1>
 

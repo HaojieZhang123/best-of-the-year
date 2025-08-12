@@ -54,7 +54,7 @@ public class BOTYController {
             model.addAttribute("title", movie.getTitle());
             return "movieDetail";
         } else {
-            model.addAttribute("title", "Movie not found");
+            model.addAttribute("title", "Movie not found with id " + id);
             return "movieDetail";
         }
 
@@ -76,7 +76,7 @@ public class BOTYController {
             model.addAttribute("title", song.getTitle());
             return "songDetail";
         } else {
-            model.addAttribute("title", "Song not found");
+            model.addAttribute("title", "Song not found with id " + id);
             return "songDetail";
         }
 
